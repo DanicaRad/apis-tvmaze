@@ -18,7 +18,7 @@
       }
  */
 async function searchShows(query) {
-  const res = await axios.get(`http://api.tvmaze.com/search/shows?q=${query}`);
+  const res = await axios.get(`https://api.tvmaze.com/search/shows?q=${query}`);
   const showsArr = [];
   const shows = res.data;
 
